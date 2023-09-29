@@ -14,3 +14,22 @@ mensagem(sub(18,7));
 mensagen(soma(2,div(2,2)));
 
 mensagem(juros_simples(420,18));
+
+mostrar_diplay = (msg)=>{
+    document.getElementById("reultado").value = msg;
+}
+
+function digitando(tecla){
+   if(tecla == "_"){
+   if(!temPonto){
+
+    
+   }
+
+   }
+   
+   
+   
+    valor += tecla;
+    mostrar_diplay(valor);
+}
