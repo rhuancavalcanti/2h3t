@@ -4,40 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grecia Antiga</title>
-    <link rel="stylesheet" href="nome.css">
-    
-    <script src="script.js"></script>
+    <title>...Indefinido...</title>
+    <link rel="stylesheet" href="./css/princial.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
-    <button onclick="SABREDELUZ()">ESTRELA DA MORTE</button>
     
     <section class="calc_simples">
-   <div class="visor">
-   <input id="resultado" readonl type="text" name="">
-
-   </div>  
-   <div class="tecla"></div>
-   <button onclick = "digitando('7')">7</button>
-   <button onclick = "digitando('8')">8</button>
-   <button onclick = "digitando('9')">9</button>
-   <button>÷</button>
-   <button onclick = "digitando('4')">4</button>
-   <button onclick = "DIGITANDO('5')">5</button>
-   <button onclick = "DIGITANDO('6')">6</button>
-   <button>X</button>
-   <button onclick = "DIGITANDO('1')">1</button>
-   <button onclick = "DIGITANDO('2')">2</button>
-   <button onclick = "DIGITANDO('3')">3</button>
-   <button>-</button>
-   <button onclick = "DIGITANDO('0')">0</button>
-   <button>+</button>
-   <button onclick = "DIGITANDO(',')">,</button>
-   <button>=</button>
-
-   
-   
-    
+            <div class="visor">
+                <input value="0" id="resultado" readonly type="text">
+            </div>
+        <div class="tecla">
+            <button onclick="digitando('7')">7</button>
+            <button onclick="digitando('8')">8</button>
+            <button onclick="digitando('9')">9</button>
+            <buttononclick="operacao('div')"/></button>
+            <button onclick="digitando('4')">4</button>
+            <button onclick="digitando('5')">5</button>
+            <button onclick="digitando('6')">6</button>
+            <button onclick="operacao('mult')"&#247>x</button>
+            <button onclick="digitando('1')">1</button>
+            <button onclick="digitando('2')">2</button>
+            <button onclick="digitando('3')">3</button>
+            <button onclick="operacao('sub')"&#247>-</button>
+            <button onclick="digitando('0')">0</button>
+            <button onclick="digitando('.')">.</button>
+            <button onclick="operacao('soma')"&#247>+</button>
+            <button onclick="calcula()" id="igual">=</button>
+        </div>
     </section>
+    
 </body>
 </html>
