@@ -1,5 +1,5 @@
 .calc_simples{
-    background-color: rgb(175, 114, 91);
+    background-color: rgb(19, 11, 8);
     padding: 5px;
     width: 200px;
     border-radius: 5px;
@@ -23,10 +23,5 @@ button {
 }
 #igual {
     background-color: tomato;
-}
-.entrada {
-    width: 36px;
-    border: none;
-    border-bottom: 2px solid black;
 }
 
