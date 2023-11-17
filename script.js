@@ -1,8 +1,8 @@
 let num1 = "";
 let num2 = "";
 let valor = "";
-let temPonto = false;
-let executa = ""
+let temPonto = false; 
+let executa = "";
 mensagem = (msg) => console.log(msg);
 soma = (a,b) => a + b;
 sub = (a,b) => a - b;
@@ -28,19 +28,53 @@ function digitando(tecla){
    mostrar_display(valor);
 }
 function operacao(op){
-  executa = op;
-  num1 = valor;
+    executa = op;
+    num1 = valor;
+    valor = "";
 }
+
 function calcula(){
-  if(executa != ""){
-    if(executa == "soma") mostrar__display(soma(num1, num2));
-    if(executa == "sub") mostrar__display(sub(num1, num2));
-    if(executa == "mult") mostrar__display(mult(num1, num2));
-    if(executa == "div") mostrar__display(div(num1, num2));
- num1="";
- num2="";
- valor="";
- temPonto=false;
- executa="";
-  }
+   if(executa != ""){
+     num2 = valor;
+     if(executa == "soma") mostrar_display(soma(Number(num1),Number(num2)));
+     if(executa == "sub") mostrar_display(sub(num1,num2));
+     if(executa == "div") mostrar_display(div(num1,num2));
+     if(executa == "mult") mostrar_display(mult(num1,num2));
+     num1 = "";
+     num2 = "";
+     valor = "";
+     temPonto = false;
+     executa = "";
+     
+    }
+}
+let a = 0;
+let b = 0;
+let c = 0;
+
+function muda_sinal_a ()  {
+    a = (-1)*a;
+
+}
+
+
+function muda_sinal_b ()  {
+    b = (-1)*a;
+
+}
+
+function muda_sinal_c ()  {
+    c = (-1)*a;
+
+}
+function set_velor_a(){
+    a = document.getElemntByib("valor_a").value;
+}
+
+function set_velor_b(){
+  a = document.getElemntByib("valor_a").value;
+}
+
+function set_velor_a(){
+  a = document.getElemntByib("valor_a").value;
 }
